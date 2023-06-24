@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- <header class="header"> -->
+            <nav class="navbar">
+                <ul>
+                    <a style="margin-right: 60%;">Library System</a>
+                    <a href="#Books">Books</a>
+                    <a href="#Register">Register</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Logout</a>
+                </ul>
+            </nav>
+        <!-- </header> -->
+        <main class="main">
+            <section class="section_window" id="book-sec">    
+                <div>
+                    <h1 id="Books">Books</h1>
+
+                </div>
+                <table class="table" border="1">
+                    <thead>
+                        <th>Book ID</th>
+                        <th style="width: 40vw;">Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <h3>1984</h3>
+                                <table class="internal_table" border="1">
+                                    <tr><td>Publication Date: 1949</td></tr>
+                                    <tr><td>Page Count: 300</td></tr>
+                                    <tr><td>ISBN: 0-6619-5117-0</td></tr>
+                                </table>
+                            </td>
+                            <td>George Orwell</td>
+                            <td>Dystopian Social Science Fiction</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <h3>The Lord of thr Rings</h3>
+                                <table class="internal_table" border="1">
+                                    <tr><td>Publication Date: 1954</td></tr>
+                                    <tr><td>Page Count: 215</td></tr>
+                                    <tr><td>ISBN: 0-6137-4712-7</td></tr>
+                                </table>
+                            </td>
+                            <td>J.R.R. Tolkien</td>
+                            <td>High-Fantasy</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <h3>The Kite Runner</h3>
+                                <table class="internal_table" border="1">
+                                    <tr><td>Publication Date: 2003</td></tr>
+                                    <tr><td>Page Count: 412</td></tr>
+                                    <tr><td>ISBN: 0-8205-6991-7</td></tr>
+                                </table>
+                            </td>
+                            <td>Khaled Hosseini</td>
+                            <td>Tumultuous Events</td>
+                            <td>Not Available</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <h3>Slaughter House-Five</h3>
+                                <table class="internal_table" border="1">
+                                    <tr><td>Publication Date: 1969</td></tr>
+                                    <tr><td>Page Count: 370</td></tr>
+                                    <tr><td>ISBN: 0-5647-3334-2</td></tr>
+                                </table>
+                            </td>
+                            <td>Kurt Vonnegut</td>
+                            <td>Science Fiction</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <h3>To kill a Mockingbird</h3>
+                                <table class="internal_table" border="1">
+                                    <tr><td>Publication Date: 1960</td></tr>
+                                    <tr><td>Page Count: 535</td></tr>
+                                    <tr><td>ISBN: 0-7015-3202-5</td></tr>
+                                </table>
+                            </td>
+                            <td>Harper Lee</td>
+                            <td>Fantasy</td>
+                            <td>Not Available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="section_window">
+                <h1 id="Register">Register</h1>
+                <form action="/submit" method="post" class="form">
+                    <div>
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" class="form_input" name="fname" id="fname" required>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" class="form_input" name="lname" id="lname" required>
+                    </div>
+                    <div>
+                        <label for="DOB">Date Of Birth:</label><br>
+                        <input type="date" class="form_input" name="DOB" id="DOB" required>
+                    </div>
+                    <div>
+                        <label for="age">AGE:</label><br>
+                        <input type="number" class="form_input" name="age" id="age" min="5" max="100" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" class="form_input" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="pwd">Password</label><br>
+                        <input type="password" class="form_input" name="pwd" id="pwd">
+                    </div>
+                    <div>
+                        <label for="Cpwd">Confirm Password</label><br>
+                        <input type="password" class="form_input" name="Cpwd" id="Cpwd">
+                    </div>
+                    <input type="submit" value="Register" id="register-but">
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
